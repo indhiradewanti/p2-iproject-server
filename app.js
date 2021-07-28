@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require('express')
+const GetData = require('./controllers/getDataController')
 const SignInController = require('./controllers/signInController')
 const SignUpController = require('./controllers/signUpController')
 const app = express()
@@ -11,6 +12,7 @@ app.use(express.json())
 app.post('/register', SignUpController.register)
 app.get('/verify', SignUpController.verify)
 app.post('/login', SignInController.login)
+app.get('/doctors', GetData.getAll)
 
 app.listen(port,function(){
     console.log("Express Started on Port 3000");
