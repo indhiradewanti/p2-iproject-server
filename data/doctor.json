@@ -1,0 +1,57 @@
+[
+    {
+        "name" : "dr. Arief Fadillah, Sp.PD",
+        "email" : "arief@doctor.com",
+        "password" : "123456",
+        "price" : 250000,
+        "imgUrl" : "https://www.halodoc.com/assets/svg/thumb_doctor.svg",
+        "age" : 35,
+        "year" : 5,
+        "SpecialistId" : 1,
+        "HospitalId" : 1
+    },
+    {
+        "name" : "dr. Yenny Halim, Sp.A",
+        "email" : "yenny@doctor.com",
+        "password" : "123456",
+        "price" : 150000,
+        "imgUrl" : "https://d1ojs48v3n42tp.cloudfront.net/personnels/463640_21-5-2021_11-3-1.png",
+        "age" : 40,
+        "year" : 10,
+        "SpecialistId" : 2,
+        "HospitalId" : 2
+    },
+    {
+        "name" : "dr. Andrico Napolin Lumbang Tobing, M.Ked., Sp.JP., FIHA",
+        "email" : "andrico@doctor.com",
+        "password" : "123456",
+        "price" : 350000,
+        "imgUrl" : "https://www.halodoc.com/assets/svg/thumb_doctor.svg",
+        "age" : 46,
+        "year" : 14,
+        "SpecialistId" : 3,
+        "HospitalId" : 3
+    },
+    {
+        "name" : "Dr. Mohammad Nazril Rizki, M.Ked(Surg), Sp.B",
+        "email" : "nazril@doctor.com",
+        "password" : "123456",
+        "price" : 100000,
+        "imgUrl" : "https://www.halodoc.com/assets/svg/thumb_doctor.svg",
+        "age" : 30,
+        "year" : 3,
+        "SpecialistId" : 4,
+        "HospitalId" : 1
+    },
+    {
+        "name" : "Dr. Novi Prasanty, M.Ked., Sp.KJ",
+        "email" : "novi@doctor.com",
+        "password" : "123456",
+        "price" : 420000,
+        "imgUrl" : "https://d1ojs48v3n42tp.cloudfront.net/personnels/463640_21-5-2021_11-3-1.png",
+        "age" : 41,
+        "year" : 12,
+        "SpecialistId" : 5,
+        "HospitalId" : 3
+    }
+]
