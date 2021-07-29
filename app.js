@@ -1,10 +1,12 @@
-require('dotenv').config()
+if (process.env.NODE_ENV === 'development') {
+    require('dotenv').config()
+}
 const express = require('express')
 const GetData = require('./controllers/getDataController')
 const SignInController = require('./controllers/signInController')
 const SignUpController = require('./controllers/signUpController')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 const cors = require('cors')
 const httpServer = require('http').createServer(app)
 const io = require('socket.io')(httpServer)
