@@ -32,5 +32,8 @@
     "sequelize": "^6.6.5",
     "socket.io": "^2.4.1",
     "stripe": "^8.165.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
   }
 }
