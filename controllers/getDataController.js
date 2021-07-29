@@ -9,7 +9,7 @@ class GetData {
                     { model : Hospital },
                     { model : Specialist }
                 ]});
-            res.status(200).json({getDoctor});
+            res.status(200).json(getDoctor);
         } catch (err) {
             console.log(err);
             next({

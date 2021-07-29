@@ -16,18 +16,19 @@ class SignInController {
 
                 } else {
                     if (req.body.password === doctor.password) {        
-                        let token = getToken({ id: doctor.id,  email: doctor.email})
-                        res.status(200).json( {email : doctor.email, token} )
+                        let token = getToken({ id: doctor.id,  email: doctor.email, name: doctor.name })
+                        res.status(200).json( {email : doctor.email, name: doctor.name, token} )
         
                     } else {
                         throw {code : 401, message : "Invalid Account"}
                     }
                 }
             } else {
-                if (bcrypt.compareSync(req.body.password, result.password)) {        
+                if (bcrypt.compareSync(req.body.password, result.password)) { 
+                    console.log(result);       
                     if (result.isVerified === true) {
-                        let token = getToken({ id: result.id, email: result.email})
-                        res.status(200).json( {email : result.email, token} )
+                        let token = getToken({ id: result.id, email: result.email, name: result.firstName})
+                        res.status(200).json({email : result.email, name: result.firstName, token} )
                     } else {
                         throw {
                             code : 404,
@@ -40,6 +41,7 @@ class SignInController {
             }
 
         } catch (err) {
+            console.log(err);
             if (err.code) {
                 next(err)
                 
