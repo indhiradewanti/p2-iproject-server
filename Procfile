@@ -1,1 +1,1 @@
-web: npm startlize
+web: npm start
